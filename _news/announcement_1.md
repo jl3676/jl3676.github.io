@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I started my research internship at [AI2](https://allenai.org/)! 
+Started my research internship at [AI2](https://allenai.org/)! 
