@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Journal papers, conference papers, and preprints.
+description: 
 nav: true
 nav_order: 2
 ---
