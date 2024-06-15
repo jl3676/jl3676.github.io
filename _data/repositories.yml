@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jl3676
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - jl3676/dynamic_noise_estimation
+  - jl3676/learning_hierarchy
