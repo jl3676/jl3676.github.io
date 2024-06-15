@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two projects featured at [CCN](https://2024.ccneuro.org/) in Boston.
+Two projects featured at the [CCN](https://2024.ccneuro.org/) conference in Boston.
