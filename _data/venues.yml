@@ -1,8 +1,11 @@
 "Journal":
+  url: ""
   color: "#8963BA"
 
 "Conference":
+  url: ""
   color: "#90C290"
 
 "Preprint":
+  url: ""
   color: "#8A8E91"
