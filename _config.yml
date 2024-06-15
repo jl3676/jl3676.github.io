@@ -234,6 +234,7 @@ exclude:
   - _pages/about_einstein.md
   - _pages/projects.md
   - _pages/profiles.md
+  - _pages/teaching.md
   - purgecss.config.js
   - README.md
   - readme_preview/
