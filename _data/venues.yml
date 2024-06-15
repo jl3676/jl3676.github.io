@@ -1,11 +1,8 @@
-"JMP":
+"Journal":
   color: "#8963BA"
 
-"CogSci":
+"Conference":
   color: "#F4B9B2"
 
 "Preprint":
   color: "#34D1BF"
-
-"NatComm":
-  color: "#F6FEAA"
