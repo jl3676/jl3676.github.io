@@ -52,7 +52,9 @@
       "keywords": [
         "Python",
         "Java",
-        "C"
+        "C",
+        "HTML/JavaScript",
+        "MATLAB"
       ]
     },
     {
@@ -64,7 +66,8 @@
         "Reinforcement Learning",
         "Computer Vision",
         "PyTorch",
-        "tensorflow"
+        "tensorflow",
+        "Parallel Computing"
       ]
     }
   ],
