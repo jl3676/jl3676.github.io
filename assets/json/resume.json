@@ -20,7 +20,7 @@
       "url": "https://allenai.org",
       "startDate": "2024-05-13",
       "endDate": "2024-08-02",
-      "summary": "Leading a research project developing a safeguarding mechanism for LLM outputs by modeling how they may bring harms to society.",
+      "summary": "Led a research project developing a safeguarding mechanism for LLM outputs by modeling how they may bring harms to society.",
       "highlights": ["LLM","NLP","AI Safety"]
     }
   ],
@@ -31,7 +31,7 @@
       "area": "Neuroscience",
       "studyType": "Ph.D.",
       "startDate": "2021-08-01",
-      "endDate": "2026-05-31",
+      "endDate": "2026-05-15",
       "courses": ["Deep Reinforcement Learning", "Deep Unsupervised Learning", "LLMs and Cognition", "Computational Models in Cognitive Science"]
     },
     {
@@ -75,12 +75,12 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native/Fluent",
+      "fluency": "Bilingual",
       "icon": ""
     },
     {
       "language": "Chinese (Mandarin)",
-      "fluency": "Native/Fluent",
+      "fluency": "Bilingual",
       "icon": ""
     }
   ]
