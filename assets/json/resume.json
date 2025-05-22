@@ -4,7 +4,7 @@
     "label": "Researcher",
     "image": "",
     "email": "jl3676@berkeley.edu",
-    "summary": "PhD student at UC Berkeley working at the intersection of cognitive science, neuroscience, and AI.",
+    "summary": "PhD student at UC Berkeley working on intelligence and AI safety.",
     "profiles": [
       {
         "network": "Twitter",
@@ -14,6 +14,15 @@
     ]
   },
   "work": [
+    {
+      "name": "Amazon Web Services Bedrock",
+      "position": "Applied Scientist Intern",
+      "url": "https://aws.amazon.com/bedrock/?trk=36201f68-a9b0-45cc-849b-8ab260660e1c&sc_channel=ps&ef_id=Cj0KCQjwlrvBBhDnARIsAHEQgOQ9R5dSSARcni6q5V6spcF9-xVkBqF9oZmMe4EDfN_xPwgZ-0tRIEMaAmxyEALw_wcB:G:s&s_kwcid=AL!4422!3!692006004850!e!!g!!aws%20bedrock!21048268689!159639953975&gad_campaignid=21048268689&gbraid=0AAAAADjHtp-R-SFkK0sWoNPtZ0vzoeOZa&gclid=Cj0KCQjwlrvBBhDnARIsAHEQgOQ9R5dSSARcni6q5V6spcF9-xVkBqF9oZmMe4EDfN_xPwgZ-0tRIEMaAmxyEALw_wcB",
+      "startDate": "2025-05-18",
+      "endDate": "2025-08-22",
+      "summary": "Leading an AI agent safety research project.",
+      "highlights": ["AI Safety","LLM Agents","NLP"]
+    },
     {
       "name": "Allen Institute for Artificial Intelligence",
       "position": "Research Intern",
