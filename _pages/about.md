@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-My research centers on understanding *intelligence*—both natural and artificial—and building more capable and safe AI models. 
+My research centers on understanding *intelligence*—both natural and artificial—and building more capable and *safe* AI models. 
 
 I'm a rising 5th-year PhD student at UC Berkeley advised by Professor [Anne Collins](https://ccn.studentorg.berkeley.edu/). My thesis investigates how complex task representations are learned and flexibly transferred to solve new problems—insights I derive from modeling human intelligence. My goal is to reverse-engineer these effective algorithms to inform the development of next-generation AI.
 
