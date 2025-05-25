@@ -31,14 +31,14 @@ $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
 // Custom Neural-Inspired Color Palette
-$neural-primary: #2D5A87 !default;        // Deep neural blue
-$neural-secondary: #4A90A4 !default;      // Synaptic teal
-$neural-accent: #7FB069 !default;         // Growth green
-$neural-warm: #F4A261 !default;           // Cognitive amber
-$neural-highlight: #E76F51 !default;      // Attention coral
-$neural-dark: #264653 !default;           // Deep thought
-$neural-light: #F1FAEE !default;          // Clean background
-$neural-muted: #8D99AE !default;          // Subtle gray
+$neural-primary: #2d5a87 !default; // Deep neural blue
+$neural-secondary: #4a90a4 !default; // Synaptic teal
+$neural-accent: #7fb069 !default; // Growth green
+$neural-warm: #f4a261 !default; // Cognitive amber
+$neural-highlight: #e76f51 !default; // Attention coral
+$neural-dark: #264653 !default; // Deep thought
+$neural-light: #f1faee !default; // Clean background
+$neural-muted: #8d99ae !default; // Subtle gray
 
 // Gradient colors for modern touches
 $gradient-start: $neural-primary !default;
@@ -63,8 +63,14 @@ $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
 
 // Typography
-$font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !default;
-$font-family-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace !default;
+$font-family-primary:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  sans-serif !default;
+$font-family-mono: "JetBrains Mono", "Fira Code", Consolas, monospace !default;
 
 // Spacing and layout
 $section-spacing: 4rem !default;

@@ -32,17 +32,17 @@
 </div>
 
 <style>
-.news-container {
-  padding-left: 0;
-}
+  .news-container {
+    padding-left: 0;
+  }
 
-.news-item {
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
-  /* padding-bottom: 1rem; */
-  
-  /* &::before {
+  .news-item {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+
+    /* &::before {
     content: '';
     position: absolute;
     left: 0;
@@ -53,55 +53,55 @@
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(45, 90, 135, 0.2);
   } */
-  
-  &::after {
-    content: '';
-    position: absolute;
-    left: 3px;
-    top: 1.5rem;
-    width: 2px;
-    height: calc(100% - 1rem);
-    background: linear-gradient(to bottom, var(--global-theme-color), transparent);
-  }
-  
-  &:last-child::after {
-    display: none;
-  }
-}
 
-.news-date {
-  font-size: 0.9rem;
-  color: var(--global-text-color-light);
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
+    &::after {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 1.5rem;
+      width: 2px;
+      height: calc(100% - 1rem);
+      background: linear-gradient(to bottom, var(--global-theme-color), transparent);
+    }
 
-.news-content {
-  color: var(--global-text-color);
-  line-height: 1.5;
-}
-
-.news-title {
-  color: var(--global-theme-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-  margin-bottom: 0rem;
-  
-  &:hover {
-    color: var(--global-hover-color);
-    text-decoration: underline;
-  }
-}
-
-@media (max-width: 768px) {
-  .news-item {
-    padding-left: 1rem;
-    
-    &::before {
-      width: 6px;
-      height: 6px;
+    &:last-child::after {
+      display: none;
     }
   }
-}
+
+  .news-date {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .news-content {
+    color: var(--global-text-color);
+    line-height: 1.5;
+  }
+
+  .news-title {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    margin-bottom: 0rem;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .news-item {
+      padding-left: 1rem;
+
+      &::before {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
 </style>

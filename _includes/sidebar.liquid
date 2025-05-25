@@ -2,8 +2,8 @@
   Use predefined keywords from _data/keyword_colors.yml
 {% endcomment %}
 
-{% assign venue_tags = "Conference,Journal,Preprint" | split: ',' %}
-{% assign topic_tags = "" | split: "" %}
+{% assign venue_tags = 'Conference,Journal,Preprint' | split: ',' %}
+{% assign topic_tags = '' | split: '' %}
 
 {% for keyword_entry in site.data.keyword_colors %}
   {% assign topic_key = keyword_entry[0] %}
@@ -17,106 +17,121 @@
     <h5 class="mb-0 me-2" style="font-size: 0.95rem; color: #555; font-weight: 600; width: 180px;">Filter by venue:</h5>
     <div id="venue-list" class="d-flex flex-wrap">
       {% for tag in venue_tags %}
-        <span class="badge mb-1 filter-button" style="background-color: #000000; color: #ffffff !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important; margin-right: 4px;" data-filter-type="venue" data-keyword="{{ tag | slugify }}">{{ tag }}</span>
+        <span
+          class="badge mb-1 filter-button"
+          style="background-color: #000000; color: #ffffff !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important; margin-right: 4px;"
+          data-filter-type="venue"
+          data-keyword="{{ tag | slugify }}"
+        >
+          {{- tag -}}
+        </span>
       {% endfor %}
     </div>
   </div>
-  
+
   <div class="d-flex align-items-center mb-2">
     <h5 class="mb-0 me-2" style="font-size: 0.95rem; color: #555; font-weight: 600; width: 180px;">Filter by topic:</h5>
     <div id="topic-list" class="d-flex flex-wrap">
       {% for tag in topic_tags %}
         {% assign keyword_color = site.data.keyword_colors[tag] %}
-        <span class="badge mb-1 filter-button" style="background-color: {{ keyword_color }}; color: #000000 !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important; margin-right: 4px;" data-filter-type="topic" data-keyword="{{ tag | slugify }}">{{ tag }}</span>
+        <span
+          class="badge mb-1 filter-button"
+          style="background-color: {{ keyword_color }}; color: #000000 !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important; margin-right: 4px;"
+          data-filter-type="topic"
+          data-keyword="{{ tag | slugify }}"
+        >
+          {{- tag -}}
+        </span>
       {% endfor %}
     </div>
   </div>
-  <button id="clear-filters-btn" class="btn btn-sm btn-light mt-1" style="font-size: 0.75rem; padding: 0.2rem 0.5rem; display: none;">Clear Filters</button>
+  <button id="clear-filters-btn" class="btn btn-sm btn-light mt-1" style="font-size: 0.75rem; padding: 0.2rem 0.5rem; display: none;">
+    Clear Filters
+  </button>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var selectedVenue = null;
-  var selectedTopic = null;
-  
-  // Debug info
-  console.log("Keywords found: ", {
-    'venue': document.querySelectorAll('#venue-list .filter-button').length,
-    'topic': document.querySelectorAll('#topic-list .filter-button').length
-  });
+  document.addEventListener('DOMContentLoaded', function () {
+    var selectedVenue = null;
+    var selectedTopic = null;
 
-  function filterPubs() {
-    var pubRows = document.querySelectorAll('.publication-row');
-    console.log('Found ' + pubRows.length + ' publication rows');
-    
-    pubRows.forEach(function(row) {
-      // Get keywords directly from the row
-      var keywords = (row.getAttribute('data-keywords') || '').split(' ');
-      console.log('Keywords for row:', keywords);
-      
-      var show = true;
-      if (selectedVenue && !keywords.includes(selectedVenue)) show = false;
-      if (selectedTopic && !keywords.includes(selectedTopic)) show = false;
-      
-      row.style.display = show ? '' : 'none';
+    // Debug info
+    console.log('Keywords found: ', {
+      venue: document.querySelectorAll('#venue-list .filter-button').length,
+      topic: document.querySelectorAll('#topic-list .filter-button').length,
     });
-    
-    document.getElementById('clear-filters-btn').style.display = 
-      (selectedVenue || selectedTopic) ? '' : 'none';
-  }
 
-  // Add active class to filters for visual feedback
-  function updateFilterButtons() {
-    document.querySelectorAll('#venue-list .filter-button').forEach(function(btn) {
-      if (btn.getAttribute('data-keyword') === selectedVenue) {
-        btn.classList.add('active');
-        btn.style.opacity = '1.0';
-        btn.style.boxShadow = '0 0 0 2px rgba(0,0,0,0.2)';
-      } else {
-        btn.classList.remove('active');
-        btn.style.opacity = '0.7';
-        btn.style.boxShadow = 'none';
-      }
-    });
-    
-    document.querySelectorAll('#topic-list .filter-button').forEach(function(btn) {
-      if (btn.getAttribute('data-keyword') === selectedTopic) {
-        btn.classList.add('active');
-        btn.style.opacity = '1.0';
-        btn.style.boxShadow = '0 0 0 2px rgba(0,0,0,0.2)';
-      } else {
-        btn.classList.remove('active');
-        btn.style.opacity = '0.7';
-        btn.style.boxShadow = 'none';
-      }
-    });
-  }
+    function filterPubs() {
+      var pubRows = document.querySelectorAll('.publication-row');
+      console.log('Found ' + pubRows.length + ' publication rows');
 
-  document.querySelectorAll('#venue-list .filter-button').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var keyword = btn.getAttribute('data-keyword');
-      selectedVenue = (selectedVenue === keyword) ? null : keyword;
-      console.log('Selected venue:', selectedVenue);
+      pubRows.forEach(function (row) {
+        // Get keywords directly from the row
+        var keywords = (row.getAttribute('data-keywords') || '').split(' ');
+        console.log('Keywords for row:', keywords);
+
+        var show = true;
+        if (selectedVenue && !keywords.includes(selectedVenue)) show = false;
+        if (selectedTopic && !keywords.includes(selectedTopic)) show = false;
+
+        row.style.display = show ? '' : 'none';
+      });
+
+      document.getElementById('clear-filters-btn').style.display = selectedVenue || selectedTopic ? '' : 'none';
+    }
+
+    // Add active class to filters for visual feedback
+    function updateFilterButtons() {
+      document.querySelectorAll('#venue-list .filter-button').forEach(function (btn) {
+        if (btn.getAttribute('data-keyword') === selectedVenue) {
+          btn.classList.add('active');
+          btn.style.opacity = '1.0';
+          btn.style.boxShadow = '0 0 0 2px rgba(0,0,0,0.2)';
+        } else {
+          btn.classList.remove('active');
+          btn.style.opacity = '0.7';
+          btn.style.boxShadow = 'none';
+        }
+      });
+
+      document.querySelectorAll('#topic-list .filter-button').forEach(function (btn) {
+        if (btn.getAttribute('data-keyword') === selectedTopic) {
+          btn.classList.add('active');
+          btn.style.opacity = '1.0';
+          btn.style.boxShadow = '0 0 0 2px rgba(0,0,0,0.2)';
+        } else {
+          btn.classList.remove('active');
+          btn.style.opacity = '0.7';
+          btn.style.boxShadow = 'none';
+        }
+      });
+    }
+
+    document.querySelectorAll('#venue-list .filter-button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var keyword = btn.getAttribute('data-keyword');
+        selectedVenue = selectedVenue === keyword ? null : keyword;
+        console.log('Selected venue:', selectedVenue);
+        filterPubs();
+        updateFilterButtons();
+      });
+    });
+
+    document.querySelectorAll('#topic-list .filter-button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var keyword = btn.getAttribute('data-keyword');
+        selectedTopic = selectedTopic === keyword ? null : keyword;
+        console.log('Selected topic:', selectedTopic);
+        filterPubs();
+        updateFilterButtons();
+      });
+    });
+
+    document.getElementById('clear-filters-btn').addEventListener('click', function () {
+      selectedVenue = null;
+      selectedTopic = null;
       filterPubs();
       updateFilterButtons();
     });
   });
-
-  document.querySelectorAll('#topic-list .filter-button').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var keyword = btn.getAttribute('data-keyword');
-      selectedTopic = (selectedTopic === keyword) ? null : keyword;
-      console.log('Selected topic:', selectedTopic);
-      filterPubs();
-      updateFilterButtons();
-    });
-  });
-
-  document.getElementById('clear-filters-btn').addEventListener('click', function() {
-    selectedVenue = null;
-    selectedTopic = null;
-    filterPubs();
-    updateFilterButtons();
-  });
-});
 </script>

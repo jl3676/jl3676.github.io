@@ -8,11 +8,10 @@
 # Add your keyword-color pairs here:
 # Example:
 "AI Safety": "#F09EA7"
-"LLM": "#F6CA94" 
-"Reinforcement Learning": "#FAFABE" 
+"LLM": "#F6CA94"
+"Reinforcement Learning": "#FAFABE"
 "Human Intelligence": "#C1EBC0"
-"Computational Modeling": "#C7CAFF" 
+"Computational Modeling": "#C7CAFF"
 "Method Development": "#CDABEB"
 "Neuroscience": "#F6C2F3"
-
-# Default fallback colors will be used if a keyword is not listed here. 
+# Default fallback colors will be used if a keyword is not listed here.

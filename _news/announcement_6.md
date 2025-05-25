@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presenting my work on AI safety at [ICML](https://icml.cc/) in Vancouver! 
+Presenting my work on AI safety at [ICML](https://icml.cc/) in Vancouver!

@@ -23,7 +23,7 @@
   // Custom gradient variables
   --gradient-primary: linear-gradient(135deg, #{$neural-primary} 0%, #{$neural-secondary} 100%);
   --gradient-accent: linear-gradient(135deg, #{$neural-accent} 0%, #{$neural-warm} 100%);
-  
+
   // Enhanced block colors
   --global-tip-block: #{$neural-accent};
   --global-tip-block-bg: rgba(#{red($neural-accent)}, #{green($neural-accent)}, #{blue($neural-accent)}, 0.1);
@@ -63,11 +63,10 @@
     border-radius: 50%;
     box-shadow: $subtle-shadow;
     transition: all $transition-medium;
-    
+
     &:hover {
       transform: translateY(-2px);
       box-shadow: $hover-shadow;
     }
   }
 }
-

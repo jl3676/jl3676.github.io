@@ -1,10 +1,10 @@
 {% comment %} Contents of _layouts/custom_bib_item.html {% endcomment %}
-{% assign pub_keywords_slugified = "" | split: "" %}
+{% assign pub_keywords_slugified = '' | split: '' %}
 {% if entry.keywords %}
   {% assign entry_keywords_array = entry.keywords | split: ',' %}
   {% for keyword_item in entry_keywords_array %}
     {% assign cleaned_keyword = keyword_item | strip | slugify %}
-    {% if cleaned_keyword != "" %}
+    {% if cleaned_keyword != '' %}
       {% assign pub_keywords_slugified = pub_keywords_slugified | push: cleaned_keyword %}
     {% endif %}
   {% endfor %}
@@ -180,11 +180,18 @@
           {% assign keywords_array = entry.keywords | split: ',' %}
           {% for keyword_item in keywords_array %}
             {% assign k_stripped = keyword_item | strip %}
-            {% if k_stripped != "" %}
-              {% if k_stripped == "Conference" or k_stripped == "Journal" or k_stripped == "Preprint" %}
-                <span class="badge me-1 keyword-tag" style="background-color: #000000; color: #ffffff !important; font-size: 0.7rem; font-weight: 400; padding: 0.15rem 0.35rem; box-shadow: none !important;">{{ k_stripped }}</span>
+            {% if k_stripped != '' %}
+              {% if k_stripped == 'Conference' or k_stripped == 'Journal' or k_stripped == 'Preprint' %}
+                <span
+                  class="badge me-1 keyword-tag"
+                  style="background-color: #000000; color: #ffffff !important; font-size: 0.7rem; font-weight: 400; padding: 0.15rem 0.35rem; box-shadow: none !important;"
+                >
+                  {{- k_stripped -}}
+                </span>
               {% else %}
-                {% assign pastel_colors = "#FFB6C1,#ADD8E6,#90EE90,#FFFFE0,#E6E6FA,#FFDAB9,#B0E0E6,#F0E68C,#FFE4E1,#D8BFD8,#E0FFFF,#FFFACD,#E1FFC1,#FFD1DC,#C1FFD7,#FFF0F5" | split: ',' %}
+                {% assign pastel_colors = '#FFB6C1,#ADD8E6,#90EE90,#FFFFE0,#E6E6FA,#FFDAB9,#B0E0E6,#F0E68C,#FFE4E1,#D8BFD8,#E0FFFF,#FFFACD,#E1FFC1,#FFD1DC,#C1FFD7,#FFF0F5'
+                  | split: ','
+                %}
                 {% assign keyword_color = site.data.keyword_colors[k_stripped] %}
                 {% unless keyword_color %}
                   {% assign pseudo_hash = 0 %}
@@ -199,7 +206,12 @@
                   {% assign pastel_idx = pseudo_hash | modulo: pastel_colors.size %}
                   {% assign keyword_color = pastel_colors[pastel_idx] %}
                 {% endunless %}
-                <span class="badge me-1 keyword-tag" style="background-color: {{ keyword_color }}; color: #000000 !important; font-size: 0.7rem; font-weight: 400; padding: 0.15rem 0.35rem; box-shadow: none !important;">{{ k_stripped }}</span>
+                <span
+                  class="badge me-1 keyword-tag"
+                  style="background-color: {{ keyword_color }}; color: #000000 !important; font-size: 0.7rem; font-weight: 400; padding: 0.15rem 0.35rem; box-shadow: none !important;"
+                >
+                  {{- k_stripped -}}
+                </span>
               {% endif %}
             {% endif %}
           {% endfor %}
