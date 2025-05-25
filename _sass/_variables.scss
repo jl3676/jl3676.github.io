@@ -30,9 +30,22 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-// Theme colors
+// Custom Neural-Inspired Color Palette
+$neural-primary: #2D5A87 !default;        // Deep neural blue
+$neural-secondary: #4A90A4 !default;      // Synaptic teal
+$neural-accent: #7FB069 !default;         // Growth green
+$neural-warm: #F4A261 !default;           // Cognitive amber
+$neural-highlight: #E76F51 !default;      // Attention coral
+$neural-dark: #264653 !default;           // Deep thought
+$neural-light: #F1FAEE !default;          // Clean background
+$neural-muted: #8D99AE !default;          // Subtle gray
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+// Gradient colors for modern touches
+$gradient-start: $neural-primary !default;
+$gradient-end: $neural-secondary !default;
+
+// Theme colors
+$code-bg-color-light: rgba($neural-primary, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location
@@ -45,6 +58,21 @@ $ti-font-path: "../fonts";
 $back-to-top-z-index: 10;
 $back-to-top-bottom: 30px;
 $back-to-top-right: 30px;
-$back-to-top-diameter: 40px;
+$back-to-top-diameter: 50px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
+
+// Typography
+$font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !default;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace !default;
+
+// Spacing and layout
+$section-spacing: 4rem !default;
+$card-border-radius: 12px !default;
+$subtle-shadow: 0 2px 20px rgba($neural-primary, 0.08) !default;
+$hover-shadow: 0 8px 30px rgba($neural-primary, 0.15) !default;
+
+// Animation timing
+$transition-fast: 0.2s ease-out !default;
+$transition-medium: 0.3s ease-out !default;
+$transition-slow: 0.5s ease-out !default;

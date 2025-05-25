@@ -2,6 +2,19 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
+      <!-- Neural Network Logo -->
+      <div class="navbar-logo">
+        <div class="neural-logo">
+          <div class="logo-node logo-node-1"></div>
+          <div class="logo-node logo-node-2"></div>
+          <div class="logo-node logo-node-3"></div>
+          <div class="logo-node logo-node-4"></div>
+          {% comment %} <div class="logo-connection logo-connection-1"></div> {% endcomment %}
+          <div class="logo-connection logo-connection-2"></div>
+          <div class="logo-connection logo-connection-3"></div>
+        </div>
+      </div>
+      
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}

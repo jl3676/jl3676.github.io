@@ -2,33 +2,106 @@
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
     <div
-      class="table-responsive"
+      class="news-container"
       {% if include.limit and site.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+        style="max-height: 60vw; overflow-y: auto;"
       {% endif %}
     >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and site.announcements.limit %}
-          {% assign news_limit = site.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
+      {% assign news = site.news | reverse %}
+      {% if include.limit and site.announcements.limit %}
+        {% assign news_limit = site.announcements.limit %}
+      {% else %}
+        {% assign news_limit = news_size %}
+      {% endif %}
+      {% for item in news limit: news_limit %}
+        <div class="news-item">
+          <div class="news-date">{{ item.date | date: '%b %d, %Y' }}</div>
+          <div class="news-content">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
     </div>
   {% else %}
     <p>No news so far...</p>
   {% endif %}
 </div>
+
+<style>
+.news-container {
+  padding-left: 0;
+}
+
+.news-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  /* padding-bottom: 1rem; */
+  
+  /* &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background: var(--global-theme-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(45, 90, 135, 0.2);
+  } */
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 1.5rem;
+    width: 2px;
+    height: calc(100% - 1rem);
+    background: linear-gradient(to bottom, var(--global-theme-color), transparent);
+  }
+  
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.news-content {
+  color: var(--global-text-color);
+  line-height: 1.5;
+}
+
+.news-title {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  margin-bottom: 0rem;
+  
+  &:hover {
+    color: var(--global-hover-color);
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-item {
+    padding-left: 1rem;
+    
+    &::before {
+      width: 6px;
+      height: 6px;
+    }
+  }
+}
+</style>
