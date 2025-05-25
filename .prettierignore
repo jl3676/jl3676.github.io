@@ -8,3 +8,13 @@ assets/js/search/*.js
 assets/plotly/demo.html
 lighthouse_results/**
 _posts/2015-10-20-math.md
+
+# Exclude GitHub workflow files from Prettier formatting
+.github/workflows/*.yml
+.github/workflows/*.yaml
+
+# Exclude other files that shouldn't be formatted
+node_modules/
+_site/
+vendor/
+.bundle/
