@@ -18,30 +18,35 @@ We've replaced the default purple/cyan theme with a sophisticated neural-inspire
 ## ✨ Key Design Features
 
 ### 1. Neural-Inspired Hero Section
+
 - Custom animated neural network visualization
 - Gradient text effects for the name
 - Responsive design with mobile optimization
 - Subtle background patterns inspired by neural connections
 
 ### 2. Enhanced Typography
+
 - **Primary Font**: Inter - Modern, clean, and highly readable
 - **Monospace Font**: JetBrains Mono - Perfect for code blocks
 - Improved letter spacing and line heights
 - Gradient text effects for special elements
 
 ### 3. Interactive Elements
+
 - Hover animations on headings with gradient bars
 - Smooth transitions and micro-interactions
 - Enhanced button styles with shimmer effects
 - Animated social icons and navigation elements
 
 ### 4. Timeline-Style News Display
+
 - Replaced table format with modern timeline design
 - Visual connection lines between news items
 - Improved readability and visual hierarchy
 - Responsive design for mobile devices
 
 ### 5. Enhanced Visual Elements
+
 - Subtle neural network background patterns
 - Improved card designs with soft shadows
 - Gradient overlays and modern border radius
@@ -50,6 +55,7 @@ We've replaced the default purple/cyan theme with a sophisticated neural-inspire
 ## 🛠 Technical Implementation
 
 ### Files Modified:
+
 - `_sass/_variables.scss` - Color palette and design tokens
 - `_sass/_themes.scss` - Light/dark theme implementations
 - `_sass/_custom.scss` - Custom styling and animations
@@ -59,6 +65,7 @@ We've replaced the default purple/cyan theme with a sophisticated neural-inspire
 - `assets/css/main.scss` - Import custom styles
 
 ### Key Features:
+
 - **CSS Custom Properties**: For dynamic theming
 - **SCSS Variables**: For consistent design tokens
 - **Responsive Design**: Mobile-first approach
@@ -77,6 +84,7 @@ We've replaced the default purple/cyan theme with a sophisticated neural-inspire
 ## 🚀 Future Enhancements
 
 Potential areas for further customization:
+
 - Interactive research timeline
 - Animated publication cards
 - Custom loading animations
@@ -85,4 +93,4 @@ Potential areas for further customization:
 
 ---
 
-These customizations transform the default al-folio theme into a unique, professional, and engaging academic website that reflects the cutting-edge nature of AI/ML research while maintaining excellent usability and accessibility. 
+These customizations transform the default al-folio theme into a unique, professional, and engaging academic website that reflects the cutting-edge nature of AI/ML research while maintaining excellent usability and accessibility.
