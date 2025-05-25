@@ -17,7 +17,7 @@
     <h5 class="mb-0 me-2" style="font-size: 0.95rem; color: #555; font-weight: 600; width: 180px;">Filter by venue:</h5>
     <div id="venue-list" class="d-flex flex-wrap">
       {% for tag in venue_tags %}
-        <span class="badge me-1 mb-1 filter-button" style="background-color: #000000; color: #ffffff !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important;" data-filter-type="venue" data-keyword="{{ tag | slugify }}">{{ tag }}</span>
+        <span class="badge mb-1 filter-button" style="background-color: #000000; color: #ffffff !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important; margin-right: 4px;" data-filter-type="venue" data-keyword="{{ tag | slugify }}">{{ tag }}</span>
       {% endfor %}
     </div>
   </div>
@@ -27,7 +27,7 @@
     <div id="topic-list" class="d-flex flex-wrap">
       {% for tag in topic_tags %}
         {% assign keyword_color = site.data.keyword_colors[tag] %}
-        <span class="badge me-1 mb-1 filter-button" style="background-color: {{ keyword_color }}; color: #000000 !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important;" data-filter-type="topic" data-keyword="{{ tag | slugify }}">{{ tag }}</span>
+        <span class="badge mb-1 filter-button" style="background-color: {{ keyword_color }}; color: #000000 !important; cursor: pointer; font-size: 0.8rem; font-weight: 400; padding: 0.25rem 0.5rem; box-shadow: none !important; margin-right: 4px;" data-filter-type="topic" data-keyword="{{ tag | slugify }}">{{ tag }}</span>
       {% endfor %}
     </div>
   </div>
