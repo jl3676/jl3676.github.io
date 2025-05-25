@@ -1,8 +1,11 @@
 # Exclude dynamically generated WebP images created by ImageMagick plugin
-file://**/assets/img/**/*.webp
-**/assets/img/**/*.webp
-*.webp
+.*\.webp$
+file://.*\.webp$
+.*assets/img/.*\.webp$
+.*publication_preview.*\.webp$
+.*prof_pic.*\.webp$
 
-# Exclude other dynamically generated files
-file://**/assets/img/prof_pic-*.webp
-file://**/assets/img/publication_preview/*.webp 
+# Exclude specific generated image patterns
+.*-480\.webp$
+.*-800\.webp$
+.*-1400\.webp$ 
