@@ -64,7 +64,7 @@
 @article{pan2024latent,
   title={Latent Variable Sequence Identification for Cognitive Models with Neural Bayes Estimation},
   author={Pan, Ti-Fen and Li, Jing-Jing and Thompson, Bill and Collins, Anne},
-  journal={arXiv preprint arXiv:2406.14742},
+  journal={arXiv},
   year={2024},
   abstract={Extracting time-varying latent variables from computational cognitive models is a key step in model-based neural analysis, which aims to understand the neural correlates of cognitive processes. However, existing methods only allow researchers to infer latent variables that explain subjects’ behavior in a relatively small class of cognitive models. For example, a broad class of relevant cognitive models with analytically intractable likelihood is currently out of reach from standard techniques, based on Maximum a Posteriori parameter estimation. Here, we present an approach that extends neural Bayes estimation to learn a direct mapping between experimental data and the targeted latent variable space using recurrent neural networks and simulated datasets. We show that our approach achieves competitive performance in inferring latent variable sequences in both tractable and intractable models. Furthermore, the approach is generalizable across different computational models and is adaptable for both continuous and discrete latent spaces. We then demonstrate its applicability in real world datasets. Our work underscores that combining recurrent neural networks and simulation-based inference to identify latent variable sequences can enable researchers to access a wider class of cognitive models for model-based neural analyses, and thus test a broader set of theories.},
   pdf={https://arxiv.org/pdf/2406.14742}, 
@@ -85,13 +85,11 @@
   keywords={Preprint, Neuroscience}
 }
 
-@inproceedings{li2023generalized,
+@article{li2023generalized,
   title={A generalized method for dynamic noise inference in modeling sequential decision-making},
   author={Li, Jing-Jing and Shi, Chengchun and Li, Lexin and Collins, Anne GE},
   abstract={Computational cognitive modeling is an important tool for understanding the processes that support human and animal decision-making. Choice data in sequential decision-making tasks are inherently noisy, and separating noise from signal can improve the quality of computational modeling. Currently, most models assume that noise is constant, or static, typically by including a parameter (e.g., uniform ε) to estimate the noise level. However, this assumption is not guaranteed to hold -- for example, an agent can lapse into an inattentive phase for a series of trials in the middle of otherwise low-noise performance. Assuming that noise is static could bias parameter and model identification. Here, we propose a new method to dynamically infer noise in choice behavior, under a model assumption that agents can transition between two discrete latent states (for example, attentive and noisy). Using four empirical datasets with diverse behavioral and modeling features, we demonstrate that our method improves model fit and that it can be easily incorporated into existing fitting procedures, including maximum likelihood estimation and hierarchical Bayesian modeling.},
-  booktitle={CogSci},
-  volume={45},
-  number={45},
+  journal={CogSci},
   year={2023},
   html={https://escholarship.org/uc/item/7p00v6c5},
   pdf={https://escholarship.org/content/qt7p00v6c5/qt7p00v6c5.pdf},
@@ -114,15 +112,12 @@
   preview={gaers.jpg}
 }
 
-@inproceedings{li2022credit,
+@article{li2022credit,
   title={Credit assignment in hierarchical option transfer},
   author={Li, Jing-Jing and Xia, Liyu and Dong, Flora and Collins, Anne GE},
   abstract={Humans have the exceptional ability to efficiently structure past knowledge during learning to enable fast generalization. Xia and Collins (2021) evaluated this ability in a hierarchically structured, sequential decision-making task, where participants could build “options” (strategy “chunks”) at multiple levels of temporal and state abstraction. A quantitative model, the Option Model, captured the transfer effects observed in human participants, suggesting that humans create and compose hierarchical options and use them to explore novel contexts. However, it is not well understood how learning in a new context is attributed to new and old options (i.e., the credit assignment problem). In a new context with new contingencies, where participants can recompose some aspects of previously learned options, do they reliably create new options or overwrite existing ones? Does the credit assignment depend on how similar the new option is to an old one? In our experiment, two groups of participants (n=124 and n=104) learned hierarchically structured options, experienced different amounts of negative transfer in a new option context, and were subsequently tested on the previously learned options. Behavioral analysis showed that old options were successfully reused without interference, and new options were appropriately created and credited. This credit assignment did not depend on how similar the new option was to the old option, showing great flexibility and precision in human hierarchical learning. These behavioral results were captured by the Option Model, providing further evidence for option learning and transfer in humans.},
-  booktitle={CogSci},
-  volume={44},
-  pages={948},
+  journal={CogSci},
   year={2022},
-  organization={NIH Public Access},
   html={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9751259/},
   pdf={https://escholarship.org/content/qt6pc5s178/qt6pc5s178_noSplash_fadabee184e56ba5cded556553f1fca1.pdf?t=reckne},
   keywords={Conference, Human Intelligence, Computational Modeling, Reinforcement Learning},
