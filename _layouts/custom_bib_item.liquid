@@ -12,7 +12,7 @@
 
 <div class="row publication-row" data-keywords="{{ pub_keywords_slugified | join: ' ' }}">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr" style="max-width: 120px;">
+    <div class="col col-sm-2 abbr" style="max-width: 120px; margin-top: 10px;">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
