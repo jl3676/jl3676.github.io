@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my internship at [AWS Agentic AI](https://aws.amazon.com) in Seattle!
+Started my internship at [AWS Agentic AI](https://aws.amazon.com/ai/agentic-ai/) in Seattle!
