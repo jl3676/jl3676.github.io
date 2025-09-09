@@ -17,8 +17,6 @@ social: true # includes social icons at the bottom of the page
 
 ## RESEARCH
 
-My research interests center on understanding _intelligence_—both natural and artificial—and building more capable and _safe_ AI models.
+My research is dedicated to improving the _safety_ of generative AI systems. My goal is to ensure that as AI models become more powerful, they remain robust, interpretable, and aligned with human values. I have applied this focus directly through research internships at [AWS Agentic AI](https://aws.amazon.com/ai/agentic-ai/), where I investigated the adversarial robustness of AI agents, and at the [Allen Institute for AI](https://allenai.org), where I worked on interpretable and transparent safety moderation.
 
-I'm a rising 5th-year PhD student at UC Berkeley advised by Professor [Anne Collins](https://ccn.studentorg.berkeley.edu/). My thesis investigates how intelligent agents efficiently learn, reason, plan, and make decisions in complex, dynamic environments—insights I derive from modeling human behavior. My goal is to reverse-engineer these effective learning algorithms to inform the development of next-generation AI.
-
-I'm also committed to ensuring that the AI systems we build are safe and aligned with human values. In Summer 2025, I researched AI agent safety as an Applied Scientist Intern at [AWS Agentic AI](https://aws.amazon.com/ai/agentic-ai/). Previously, as a Research Intern at the [Allen Institute for AI](https://allenai.org), I led a project on improving the interpretability and transparency of the safety moderation of AI behavior.
+My approach to AI safety is grounded in cognitive science. As a final-year PhD student at UC Berkeley advised by Professor [Anne Collins](https://ccn.studentorg.berkeley.edu/), I investigate the computational principles behind how humans learn, reason, and make decisions. This background provides a unique lens for analyzing complex, human-like behaviors in AI and for constructing high-quality alignment data that reflects nuanced human judgment.
