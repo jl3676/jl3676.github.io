@@ -5,16 +5,16 @@ title: cv
 description:
 nav: true
 nav_order: 5
+redirect: /assets/pdf/Jing_Jing_Li_CV.pdf
 ---
 
-<div class="cv-container" style="text-align: center; padding: 2rem 0;">
-  <p style="margin-bottom: 1.5rem;">Download my full CV:</p>
-  <a href="{{ '/assets/pdf/Jing_Jing_Li_CV.pdf' | relative_url }}" target="_blank" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-size: 1.1rem;">
-    <i class="fas fa-file-pdf"></i> Download CV (PDF)
-  </a>
-</div>
+<script type="text/javascript">
+  window.location.href = "{{ '/assets/pdf/Jing_Jing_Li_CV.pdf' | relative_url }}";
+</script>
 
-<div class="embed-responsive embed-responsive-1by1" style="margin-top: 2rem;">
-  <iframe src="{{ '/assets/pdf/Jing_Jing_Li_CV.pdf' | relative_url }}" class="embed-responsive-item" style="width: 100%; height: 80vh; border: 1px solid #ddd;"></iframe>
-</div>
+<noscript>
+  <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/Jing_Jing_Li_CV.pdf' | relative_url }}">
+</noscript>
+
+<p>Redirecting to CV... <a href="{{ '/assets/pdf/Jing_Jing_Li_CV.pdf' | relative_url }}">Click here if not redirected automatically</a>.</p>
 
