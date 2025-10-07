@@ -8,8 +8,8 @@ nav_order: 5
 ---
 
 <script type="text/javascript">
-  window.location.href = "{{ '/assets/pdf/Jing_Jing_Li_CV.pdf' | relative_url }}";
+  window.location.href = "/assets/pdf/Jing_Jing_Li_CV.pdf";
 </script>
 
-<p>Redirecting to CV... If not redirected automatically, <a href="{{ '/assets/pdf/Jing_Jing_Li_CV.pdf' | relative_url }}">click here</a>.</p>
+<p>Redirecting to CV... If not redirected automatically, <a href="/assets/pdf/Jing_Jing_Li_CV.pdf">click here</a>.</p>
 
