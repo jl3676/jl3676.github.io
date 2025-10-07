@@ -12,4 +12,3 @@ nav_order: 5
 </script>
 
 <p>Redirecting to CV... If not redirected automatically, <a href="/assets/pdf/Jing_Jing_Li_CV.pdf">click here</a>.</p>
-
