@@ -110,7 +110,13 @@
               {% else %}
                 <li class="nav-item {% if page.url contains p.permalink %}active{% endif %}">
                   {% if p.external_url %}
-                    <a class="nav-link" href="{{ p.external_url | relative_url }}"{% if p.nav_target %} target="{{ p.nav_target }}"{% endif %}>
+                    <a
+                      class="nav-link"
+                      href="{{ p.external_url | relative_url }}"
+                      {% if p.nav_target %}
+                        target="{{ p.nav_target }}"
+                      {% endif %}
+                    >
                       {{- p.title }}
                     </a>
                   {% else %}
