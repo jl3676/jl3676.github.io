@@ -5,10 +5,8 @@ title: cv
 description:
 nav: true
 nav_order: 5
+external_url: /assets/pdf/Jing_Jing_Li_CV.pdf
+nav_target: _blank
 ---
 
-<script type="text/javascript">
-  window.location.href = "/assets/pdf/Jing_Jing_Li_CV.pdf";
-</script>
-
-<p>Redirecting to CV... If not redirected automatically, <a href="/assets/pdf/Jing_Jing_Li_CV.pdf">click here</a>.</p>
+<p>View my <a href="/assets/pdf/Jing_Jing_Li_CV.pdf" target="_blank">CV (PDF)</a>.</p>
