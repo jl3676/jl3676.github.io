@@ -1,3 +1,18 @@
+@misc{li2026pluriharmsbenchmarkingspectrumhuman,
+      title={PluriHarms: Benchmarking the Full Spectrum of Human Judgments on AI Harm}, 
+      author={Jing-Jing Li and Joel Mire and Eve Fleisig and Valentina Pyatkin and Anne Collins and Maarten Sap and Sydney Levine},
+      year={2026},
+      eprint={2601.08951},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      pdf={https://arxiv.org/pdf/2601.08951},
+      code={https://jl3676.github.io/PluriHarms/},
+      selected={true},
+      abstract={Current AI safety frameworks, which often treat harmfulness as binary, lack the flexibility to handle borderline cases where humans meaningfully disagree. To build more pluralistic systems, it is essential to move beyond consensus and instead understand where and why disagreements arise. We introduce PluriHarms, a benchmark designed to systematically study human harm judgments across two key dimensions -- the harm axis (benign to harmful) and the agreement axis (agreement to disagreement). Our scalable framework generates prompts that capture diverse AI harms and human values while targeting cases with high disagreement rates, validated by human data. The benchmark includes 150 prompts with 15,000 ratings from 100 human annotators, enriched with demographic and psychological traits and prompt-level features of harmful actions, effects, and values. Our analyses show that prompts that relate to imminent risks and tangible harms amplify perceived harmfulness, while annotator traits (e.g., toxicity experience, education) and their interactions with prompt content explain systematic disagreement. We benchmark AI safety models and alignment methods on PluriHarms, finding that while personalization significantly improves prediction of human harm judgments, considerable room remains for future progress. By explicitly targeting value diversity and disagreement, our work provides a principled benchmark for moving beyond "one-size-fits-all" safety toward pluralistically safe AI.},
+      preview={pluriharms.jpg},s
+      keywords={Preprint, AI Safety, LLM},
+
+
 @misc{li2025stacinnocenttoolsform,
       title={STAC: When Innocent Tools Form Dangerous Chains to Jailbreak LLM Agents}, 
       author={Jing-Jing Li and Jianfeng He and Chao Shang and Devang Kulshreshtha and Xun Xian and Yi Zhang and Hang Su and Sandesh Swamy and Yanjun Qi},
@@ -11,7 +26,7 @@
       code={https://github.com/amazon-science/MultiTurnAgentAttack},
       keywords={Preprint, AI Safety, LLM},
       preview={stac.jpg},
-      selected={true},
+      selected={false},
       abstract={As LLMs advance into autonomous agents with tool-use capabilities, they introduce security challenges that extend beyond traditional content-based LLM safety concerns. This paper introduces Sequential Tool Attack Chaining (STAC), a novel multi-turn attack framework that exploits agent tool use. STAC chains together tool calls that each appear harmless in isolation but, when combined, collectively enable harmful operations that only become apparent at the final execution step. We apply our framework to automatically generate and systematically evaluate 483 STAC cases, featuring 1,352 sets of user-agent-environment interactions and spanning diverse domains, tasks, agent types, and 10 failure modes. Our evaluations show that state-of-the-art LLM agents, including GPT-4.1, are highly vulnerable to STAC, with attack success rates (ASR) exceeding 90% in most cases. The core design of STAC's automated framework is a closed-loop pipeline that synthesizes executable multi-step tool chains, validates them through in-environment execution, and reverse-engineers stealthy multi-turn prompts that reliably induce agents to execute the verified malicious sequence. We further perform defense analysis against STAC and find that existing prompt-based defenses provide limited protection. To address this gap, we propose a new reasoning-driven defense prompt that achieves far stronger protection, cutting ASR by up to 28.8%. These results highlight a crucial gap: defending tool-enabled agents requires reasoning over entire action sequences and their cumulative effects, rather than evaluating isolated prompts or responses.},
 }
 
