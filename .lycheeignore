@@ -11,4 +11,4 @@ file://.*\.webp$
 .*-1400\.webp$
 
 # Exclude slow/unreliable external sites that cause timeouts
-https://rldm.org/ 
+https://rldm\.org/
