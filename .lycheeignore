@@ -8,4 +8,7 @@ file://.*\.webp$
 # Exclude specific generated image patterns
 .*-480\.webp$
 .*-800\.webp$
-.*-1400\.webp$ 
+.*-1400\.webp$
+
+# Exclude slow/unreliable external sites that cause timeouts
+https://rldm.org/ 
